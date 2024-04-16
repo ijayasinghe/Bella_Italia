@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UPDATE WITH CORRECT RESTAURANT NAME -->
+    <title>Bookings - Bella Italia Trattoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+
+
+<!-- header begins -->
+<div class="header">
+    <h3>Bella Italia Trattoria</h3>    
+    </div>
+<!-- header ends -->
+
+
+<!-- header2 begins -->
+<div class="header2">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="#menu-2">Booking</a>
+            <div class="dropdown">
+                <button class="dropbtn">Locations 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Vancouver.html">Vancouver</a>
+                    <a href="Burnaby.html">Burnaby</a>
+                    <a href="Surrey.html">Surrey</a>
+                </div>
+            </div> 
+        </nav>
+    </div>
+<!-- header ends -->
+
+
+<!-- graphic for left side of screen begins -->
+<div class="mainPicture">
+</div>
+<!-- graphic for left side of screen ends -->
+
+
+<!-- reservation form begins -->
+    <div class="form">
+        <h1>Bookings</h1>
+        <br>
+        <p>Brought to life in every dish by our chefs</p>
+        <p>From traditional to exquisite regional specialties</p>
+        <p>Bella Italia Trattoria promises an unforgettable dining experience filled with:</p>
+        <p>warmth, authenticity, and the finest ingredients</p>
+        <br>
+        <p>Join us as we journey through the rich history of Italian cuisine</p>
+        
+        <h4>Buon appetito!</h4>
+        
+        <br>
+        <br>
+        <form action="https://formspree.io/f/mgegplnr" method="POST">
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required>
+            
+            <br>
+            <br>
+            
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" required>
+            
+            <br>
+            <br>
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <br>
+            <br>
+
+            <label for="location">Location</label>
+                <select id="location" name="location">
+                <option value="locationFirstOption"> - Select Location - </option>    
+                <option value="locationOne">Vancouver</option>
+                <option value="locationTwo">Burnaby</option>
+                <option value="locationThree">Surrey</option>
+                </select>
+
+            <br>
+            <br>
+            
+            <label for="numberOfGuests">Number of Guests</label>
+                <select id="numberOfGuests" name="numberOfGuests">
+                <option value="peopleFirstOption"> - Select Number of Guests - </option>    
+                <option value="peopleOne">1</option>
+                <option value="peopleTwo">2</option>
+                <option value="peopleThree">3</option>
+                <option value="peopleFour">4</option>
+                <option value="peopleFive">5</option>
+                <option value="peopleSix">6</option>
+                <option value="peopleSeven">7</option>
+                <option value="peopleEight">8</option>
+                <option value="peopleNine">9</option>
+                <option value="peopleTen">10</option>
+                <option value="peopleEleven">11</option>
+                <option value="peopleTwelvePlus">12+</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="dateOfReservation">Date</label>
+                <input type="date" id="dateOfReservation" name="dateOfReservation">
+
+                <br>
+                <br>
+
+                <label for="timeOfReservation">Start Time</label>
+                <select id="timeOfReservation" name="timeOfReservation">
+                <option value="timeFirstOption"> - Select Time - </option>    
+                <option value="timeOne">4:00 pm</option>
+                <option value="timeTwo">4:30 pm</option>
+                <option value="timeThree">5:00 pm</option>
+                <option value="timeFour">5:30 pm</option>
+                <option value="timeFive">6:00 pm</option>
+                <option value="timeSix">6:30 pm</option>
+                <option value="timeSeven">7:00 pm</option>
+                <option value="timeEight">7:30 pm</option>
+                <option value="timeNine">8:00 pm</option>
+                <option value="timeTen">8:30 pm</option>
+                <option value="timeEleven">9:00 pm</option>
+                <option value="timeTwelve">9:30 pm</option>
+                </select>
+
+                <br>
+                <br>
+                
+                <label for="selectAnOccasion">Select an Occasion (optional)</label>
+                <br>
+                <input type="radio" id="birthday" name="selectAnOccasionChoice" value="birthday">
+                <label for="html">Birthday</label><br>
+                <input type="radio" id="anniversary" name="selectAnOccasionChoice" value="anniversary">
+                <label for="html">Anniversary</label><br>
+                <input type="radio" id="dateNight" name="selectAnOccasionChoice" value="dateNight">
+                <label for="html">Date Night</label><br>
+                <input type="radio" id="businessMeal" name="selectAnOccasionChoice" value="businessMeal">
+                <label for="html">Business Meal</label><br>
+                <input type="radio" id="celebration" name="selectAnOccasionChoice" value="celebration">
+                <label for="html">Celebration</label><br>
+
+                <br>
+
+                <label for="specialRequest">Add a Special Request</label>
+                <br>
+                <textarea name="message" rows="10" cols="45">
+                </textarea>
+
+                <br>
+
+                <div class="buttons">
+                    <input type="submit" value="Make My Booking" id="submit" onclick="alert('Booking Complete! See you soon!!')">
+                    <input type="reset" value="Clear All" id="reset"></div>
+
+        </form>
+    </div>
+<!-- reservation form ends -->
+
+
+<!-- socials begins -->
+<div class="locations">
+    <p>Vancouver&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burnaby&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surrey</p>
+    <br>
+    <em>"People who love to eat are always the best people"</em>
+    <br>
+    <i>- Stanley Tucci</i>
+</div>
+<!-- socials ends -->
+
+
+<!-- footer begins -->
+<div class="footer">
+    <footer>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.google.com/" class="fa fa-google"></a>
+        <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+
+    </footer></div>
+<!-- footer ends -->
+
+
+</div>
+</body>
+</html>

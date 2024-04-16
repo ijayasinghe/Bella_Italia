@@ -1,0 +1,694 @@
+
+.body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color:rgb(212, 212, 212);
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #181717;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #1b0202;
+    color: rgb(212, 212, 212);
+  }
+  
+  .topnav a.active {
+    background-color:rgb(212, 212, 212);
+    color: rgb(15, 15, 15);
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  .LeftSide{
+    border: black solid 1px;
+      grid-area: LeftSide;
+
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .video{
+      display: none;
+    }
+    
+  }
+  /*tablet view*/
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .video{
+      display: none;
+    }
+    .LeftSide{
+      display: none;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+   
+  }
+  .LeftSide{
+    display: none;
+  }
+  .video{
+    display: none;
+  }
+  .Page{
+      display: grid;
+      grid-template-areas: 
+      "Head Head Head"
+      "Main Main Main"
+      "Side Side Side"
+      "Footer Footer Footer";
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: .5fr 1.5fr 2fr .5fr;
+      height: 200vh;
+      margin: auto;
+      height: 200vh;
+      
+      }
+      .logo{
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+         background-image: url("Images/PastaChefHead2.jpg");
+         background-position: center;
+      background-repeat: no-repeat;
+         background-size: 220px;
+         margin: auto;
+      
+      }
+      .LeftSide{
+        display: none;
+      }
+      .box1{
+        display: none;
+      }
+      .Head{
+        
+          grid-area: Head;
+          background-color: black;
+          color: white;
+         
+          background-position: center;
+        
+      }
+      .logo {
+        transition: transform .7s ease-in-out;
+      }
+      .logo:hover {
+        transform: rotate(360deg);
+      }
+     
+      
+      .Main{
+        text-align: left;
+        background-image: url("Images/backroundimage3.jpg");
+        background-size: 100% 100%;
+          grid-area: Main;
+      }
+      .headtitle{
+        margin: auto;
+        width: 60%;
+        text-align: center;
+        border: solid black 5px;
+        border-radius: 20px;
+       
+        background-color: gainsboro;
+      }
+      .MainBox{
+        border-radius: 20px;
+        box-shadow: 15px 10px 10px  rgb(0, 0, 0);
+        margin:80px 50px 50px 50px;
+        width: 80%;
+        color: rgb(0, 0, 0);
+        font-size: larger;
+        font-weight: bold;
+        background-color: #f4f8f2;
+        opacity: .8;
+        height: 60%;
+      }
+      .mainLocation{
+        margin: auto;
+        padding-top: 20px;
+        border: maroon 2px solid;
+        height: 40px;
+        text-align: center;
+      }
+        
+      .Side{
+          
+        background-color: rgb(248, 241, 230);
+          grid-area: Side;
+        }
+        .ftrd{
+          background-color: rgb(150, 150, 150);
+          grid-area: ftrd;
+          text-align: center;
+          width: 100%;
+          /* border: maroon solid 2px; */
+          opacity: .5;
+          color: white;
+          height: 40px;}
+          .box2{
+          float: left;
+          clear: both;
+            grid-area: box2;
+         border-radius: 20px;
+         margin: auto;
+         height: 50%;
+         width: 50%;
+         background-image: url("Images/gallery5.jpg");
+         background-position: center;
+         background-size: 100% 100%;
+          }
+          .box3{
+            float: right;
+            clear: both;
+            grid-area: box3;
+         border-radius: 20px;
+         margin: auto;
+         height: 50%;
+         width: 50%;
+         background-image: url("Images/gallery6.jpg");
+         background-position: center;
+         background-size: 100% 100%;
+          }
+      
+      
+      
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+      }
+      
+      .box2, .box3{
+          width: 80%;
+          height: 40%;
+          border-radius: 20px;
+          margin: auto;
+          margin-top: 40px; 
+      }
+      .LeftSide{
+      
+          
+          border: black solid 1px;
+          grid-area: LeftSide;
+      
+      }
+      .box1{
+          width: 80%;
+          height: 80%;
+          border: maroon 10px solid;
+          margin: auto;
+          margin-top: 40px; 
+      
+      }
+      .Footer{
+        background-color: maroon;
+        text-align: center;
+          grid-area: Footer;
+      }
+      .fa {
+        margin-top: 10px;
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+      }
+  
+      .fa:hover {
+        opacity: 0.7;
+      }
+      
+      
+      .fa-facebook {
+        background: #0c0c0c;
+        color: white;
+      }
+      
+     
+      .fa-twitter {
+        background: #1b1b1b;
+        color: white;
+      }
+      .fa-instagram {
+        background: #1b1b1b;
+        color: white;
+      }
+      .fa-snapchat {
+        background: #1b1b1b;
+        color: white;
+      }
+      .InfoFooter{
+        
+        font-weight: bold;
+        margin:auto;
+        width : 300px;
+        background-color: beige;
+        border-radius: 20px;
+      }
+      
+
+    /* desktop view */
+  @media only screen and (min-width: 1000px){
+  
+      .Page{
+  display: grid;
+  grid-template-areas: 
+  "Head Head Head"
+  "Main Main Main"
+  "LeftSide Side Side"
+  "video video video"
+  "Footer Footer Footer";
+  grid-template-columns: 1fr 2fr ;
+  grid-template-rows: .5fr 2fr 2fr 2fr .5fr;
+  height: 350vh;
+ 
+  margin: auto;
+  
+  
+  }
+  .box1{
+    display: grid;
+  }
+  .video{
+    grid-area: video;
+    display: grid;
+  }
+  .logo{
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+     background-image: url("Images/PastaChefHead2.jpg");
+     background-position: center;
+  background-repeat: no-repeat;
+     background-size: 220px;
+  
+  }
+  .Head{
+    
+      grid-area: Head;
+      background-color: black;
+      color: white;
+      
+      background-position: center;
+    
+  }
+  .logo {
+    transition: transform .7s ease-in-out;
+  }
+  .logo:hover {
+    transform: rotate(360deg);
+  }
+ 
+  
+  .Main{
+    text-align: left;
+    background-image: url("Images/backroundimage3.jpg");
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+  
+      grid-area: Main;
+  }
+  .headtitle{
+   float: right;
+    width: 30%;
+    text-align: center;
+    border: solid rgb(255, 255, 255) 5px;
+    background-color: gainsboro;
+    
+    clear: both;
+    opacity: .8;
+    border-radius: 20px;
+  }
+  .MainBox{
+    border-radius: 20px;
+    box-shadow: 15px 10px 10px  rgb(0, 0, 0);
+    float: right;
+    width: 50%;
+    height:80%;
+    clear: both;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #f4f8f2;
+    opacity: .8;
+    height: 60%;
+
+  }
+  .mainLocation{
+    margin: auto;
+    padding-top: 20px;
+    border: maroon 2px solid;
+    height: 40px;
+    
+  }
+  .Side{
+     
+      grid-area: Side;
+      display: grid;
+      grid-template-areas: "ftrd  ftrd"
+                           "box2  box3"
+                           "box4  box5";
+                           
+      grid-template-columns: 1fr 1fr ;
+      grid-template-rows: 1fr 3fr 3fr ;
+      background-color: rgb(248, 241, 230);
+  
+  }
+  .ftrd{
+    background-color: rgb(138, 138, 138);
+    grid-area: ftrd;
+    text-align: center;
+    width: 100%;
+    border: maroon solid 2px;
+    opacity: .5;
+    height: 40px;
+    color: white;
+  }
+  .box2{
+    
+    grid-area: box2;
+ border-radius: 20px;
+ margin: auto;
+ height: 90%;
+ width: 90%;
+ background-image: url("Images/gallery5.jpg");
+ background-position: center;
+ background-size: 100% 100%;
+  }
+  .box3{
+    
+    grid-area: box3;
+ border-radius: 20px;
+ margin: auto;
+ height: 90%;
+ width: 90%;
+ background-image: url("Images/gallery6.jpg");
+ background-position: center;
+ background-size: 100% 100%;
+  }
+  .box4{
+    
+    grid-area: box4;
+ border-radius: 20px ;
+ margin: auto;
+ height: 90%;
+ width: 90%;
+ background-image: url("Images/gallery7.jpg");
+ background-position: center;
+ background-size: 100% 100%;
+  }
+  .box5{
+    
+    grid-area: box5;
+ border-radius:20px ;
+ margin: auto;
+ height: 90%;
+ width: 90%;
+ background-image: url("Images/gallery8.jpg");
+ background-position: center;
+ background-size: 100% 100%;
+  }
+   
+  }
+  .LeftSide{
+  display: grid;
+      background-color: black;
+      
+      grid-area: LeftSide;
+  
+  }
+  .box1{
+ 
+   
+      width: 90%;
+      height: 90%;
+      border: maroon 10px solid;
+      border-radius: 20px;
+      margin: auto;
+      margin-top: 40px;
+      /* background-image: url(Images/Location1.jpg); */
+      background-position: center; 
+  
+  }
+  .Footer{
+      background-color: maroon;
+     
+      grid-area: Footer;
+       text-align: center;
+  }
+ 
+  .fa {
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #0c0c0c;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #1b1b1b;
+    color: white;
+  }
+  .fa-instagram {
+    background: #1b1b1b;
+    color: white;
+  }
+  .fa-snapchat {
+    background: #1b1b1b;
+    color: white;
+  }
+  .InfoFooter{
+  
+        font-weight: bold;
+        margin:auto;
+        width : 300px;
+        background-color: beige;
+        border-radius: 20px;
+  }
+
+  
+  @media only screen and (max-width: 550px){
+  
+      .Page{
+  display: grid;
+  grid-template-areas: 
+  "Head"
+  "Main"
+  "Side"
+  "Footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: .5fr 2fr 2fr .5fr;
+  height: 250vh;
+  margin: auto;
+  
+  
+  }
+  .video{
+    display: none;
+  }
+  .logo{
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+     background-image: url("Images/PastaChefHead2.jpg");
+     background-position: center;
+  background-repeat: no-repeat;
+     background-size: 220px;
+  
+  }
+  .Head{
+      border: black solid 1px;
+      grid-area: Head;
+      background-color: black;
+      color: white;
+      
+      background-position: center;
+    
+  }
+  .logo {
+    transition: transform .7s ease-in-out;
+  }
+  .logo:hover {
+    transform: rotate(360deg);
+  }
+  .Head.responsive{position: relative;}
+  .Head.responsive .icon {
+      position: absolute;
+      right: 0;
+      left: 0;
+  }
+  
+  
+  .home{
+      color:white;
+      text-decoration: none;
+      font-style:italic ;
+      margin :10px;
+  
+  }
+  
+  .Main{
+    text-align: left;
+    background-color: beige;  
+      grid-area: Main;
+  }
+  .headtitle{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    border: solid black 5px;
+    border-radius: 20px;
+    
+  }
+  .MainBox{
+    border-radius: 20px;
+    box-shadow: 15px 10px 10px  rgb(0, 0, 0);
+    margin: auto;
+    width: 80%;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: bold;
+ height: 60%;
+    background-color: #f4f8f2;
+    opacity: .8;
+  }
+  .Side{
+      
+      
+      grid-area: Side;
+  
+  
+  }
+  .box2{
+    
+   
+   border-radius: 20px;
+   margin: auto;
+   height: 40%;
+   width: 100%;
+   background-image: url("Images/gallery5.jpg");
+   background-position: center;
+   background-size: 100% 100%;
+    }
+    .box3{
+      
+      
+   border-radius: 20px;
+   margin-top: 10px;
+   height: 40%;
+   width: 100%;
+   background-image: url("Images/gallery6.jpg");
+   background-position: center;
+   background-size: 100% 100%;
+    }
+
+  .LeftSide{
+  
+      
+      display: none;
+  
+  }
+  .box1{
+      width: 85%;
+      height: 85%;
+      border: black solid 0.5px;
+      margin: auto;
+      margin-top: 40px; 
+  
+  }
+  .Footer{
+    background-color: maroon;
+    text-align: center;
+      grid-area: Footer;
+  }
+  .fa {
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #0c0c0c;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #1b1b1b;
+    color: white;
+  }
+  .fa-instagram {
+    background: #1b1b1b;
+    color: white;
+  }
+  .fa-snapchat {
+    background: #1b1b1b;
+    color: white;
+  }
+  .InfoFooter{
+   
+    font-weight: bold;
+    margin:auto;
+    width : 300px;
+    background-color: beige;
+    border-radius: 20px;
+  }
+  }

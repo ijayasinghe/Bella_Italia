@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="home-script.js" defer></script>
+    <title>Home-Bella Italia Resturants</title>
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- desktop and tablet navigation -->
+        <div class="nav-main">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="anoushka index.html">Bookings</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Locations 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Vancouver.html">Vancouver Location</a>
+                        <a href="Burnaby.html">Burnaby Location</a>
+                        <a href="Surrey.html">Surrey Location</a>
+                    </div>
+                </div> 
+            </nav>
+
+            <!-- mobile navigation bar -->
+            <div class="topnav">
+                <a href="home.html" class="active">Home</a>
+                <div id="myLinks">
+                    <a href="anoushka index.html">Bookings</a>
+                    <a href="Vancouver.html">Vancouver</a>
+                    <a href="Burnaby.html">Burnaby</a>
+                    <a href="Surrey.html">Surrey</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+    
+            <div class="main">
+                <div class="heading">
+                    
+                    <p>Bella Italia</br>Resturants</p>
+                </div>
+                <div class="logo"></div>
+               
+            </div>
+        </div>
+
+        
+        
+        <!-- abous us -->
+        <div class="about">
+            <h2>About us</h2>
+            <p>Our vision at Bella Italia is to redefine the dining experience, where every meal becomes a cherished memory and every guest feels like family. We strive to be more than just a restaurant; we aim to be a culinary destination that inspires and delights.
+            
+                Beyond our delectable dishes, we are dedicated to providing impeccable service that leaves a lasting impression. Whether you're joining us for a romantic dinner, a family celebration, or a casual meal with friends, our warm and welcoming ambiance sets the stage for memorable moments.</p>
+        </div>
+
+        <!-- feedback -->
+        <div class="feedback-desktop">
+            <div class="feedback1">
+                <h2>"Amazing Taste"</h2>
+                <p>"This is the tastiet food i have experienced.I really recommend this resturant to everybody!"</p>
+            </div>
+            <div class="feedback2">
+                <h2>"Great experience"</h2>
+                <p>"The vibe and the food was amazing.I cant wait to dine there again."</p>
+            </div>
+            <div class="feedback3">
+                <h2>"We love it!!"</h2>
+                <p>"Plates is a great place for all the family members for really good food."</p>
+            </div>
+        </div>
+
+        <div class="feedback-tablet">
+            <div class="feedback1">
+                <h2>"Amazing Taste"</h2>
+                <p>"This is the tastiet food i have experienced.I really recommend this resturant to everybody!"</p>
+            </div>
+            <div class="feedback2">
+                <h2>"Great experience"</h2>
+                <p>"The vibe and the food was amazing.I cant wait to dine there again."</p>
+            </div>
+        </div>
+
+        <!-- mobile feedback slide show -->
+        <div class="feedback-mobile">
+
+            <div class="mySlides fade">
+                  <h2>"We love it!!"</h2>
+                  <p>"Plates is a great place for all the family members for really good food."</p>
+            </div>
+        
+            <div class="mySlides fade">
+                  <h2>"Great experience"</h2>
+                  <p>"The vibe and the food was amazing.I cant wait to dine there again."</p>
+            </div>
+        
+            <div class="mySlides fade">
+                  <h2>"Amazing Taste"</h2>
+                  <p>"This is the tastiet food i have experienced.I really recommend this resturant to everybody!"</p>
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+
+
+
+        <!-- contact form -->
+        <div class="formBlock-desktop">
+            <div class="formHeader">
+                <button>Contact us</button>
+            </div>
+
+            <div class="formContent">
+                <form action="FormSubmit.html" target="_self">
+                    <div class="inputs">
+                        <h2>We are just one message away ...</h2>
+                        <!-- <label for="FullName" id="fullNameLabel">Full name</label> -->
+                        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required><br>
+            
+                        <!-- <label for="email" id="emailLabel">Email</label> -->
+                        <input type="email" name="email" id="email"  required placeholder="Email "><br>
+            
+                        <!-- <label for="message" id="messageLabel">Message</label> -->
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea><br>
+                    </div>
+                    
+                    <div class="buttons">
+                        <input type="submit" value="Submit" id="submit" onclick="alert('Message sent')">
+                        <input type="reset" value="Clear" id="reset">
+                    </div>
+                </form>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li><i class="fa fa-phone"></i>&ensp;&ensp;&ensp;(778) 123 4550</li>
+                    <li><i class="fa fa-envelope"></i> &ensp;&ensp;BellaItalia@info.com</li>
+                    <li><i class="fa fa-instagram"></i> <a href="https://www.instagram.com">&ensp;&ensp;Bella_Italia_Resturants</a></li>
+                    <li><i class="fa fa-facebook-f"></i><a href="https://www.facebook.com">&ensp;&ensp;&ensp;Bella_Italia_Resturants</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+       
+        <!-- tablet form -->
+        <div class="form-tablet">
+            <div class="tablet-formContent">
+
+                <form action="FormSubmit.html" target="_self">
+                    <div class="inputs">
+                        <h2>We are just one message away ...</h2>
+                        <!-- <label for="FullName" id="fullNameLabel">Full name</label> -->
+                        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required><br>
+            
+                        <!-- <label for="email" id="emailLabel">Email</label> -->
+                        <input type="email" name="email" id="email"  required placeholder="Email "><br>
+            
+                        <!-- <label for="message" id="messageLabel">Message</label> -->
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea><br>
+                    </div>
+                    
+                    <div class="buttons">
+                        <input type="submit" value="Submit" id="submit" onclick="alert('Message sent')">
+                        <input type="reset" value="Clear" id="reset">
+                    </div>
+                </form>
+
+            </div>
+            <div class="tablet-links">
+                <ul>
+                    <li><i class="fa fa-phone"></i>&ensp;&ensp;&ensp;(778) 123 4550</li>
+                    <li><i class="fa fa-envelope"></i> &ensp;&ensp;BellaItalia@info.com</li>
+                    <li><i class="fa fa-instagram"></i> <a href="https://www.instagram.com">&ensp;&ensp;Bella_Italia_Resturants</a></li>
+                    <li><i class="fa fa-facebook-f"></i><a href="https://www.facebook.com">&ensp;&ensp;&ensp;Bella_Italia_Resturants<</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- mobile form and links -->
+        <div class="mobile-form">
+            <form action="FormSubmit.html" target="_self">
+                <div class="inputs">
+                    <h3>We are just one message away ...</h3>
+                    <!-- <label for="FullName" id="fullNameLabel">Full name</label> -->
+                    <input type="text" name="fullName" id="fullName" placeholder="Full Name" required><br>
+        
+                    <!-- <label for="email" id="emailLabel">Email</label> -->
+                    <input type="email" name="email" id="email"  required placeholder="Email "><br>
+        
+                    <!-- <label for="message" id="messageLabel">Message</label> -->
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea><br>
+                </div>
+                
+                <div class="buttons">
+                    <input type="submit" value="Submit" id="submit" onclick="alert('Message sent')">
+                    <input type="reset" value="Clear" id="reset">
+                </div>
+            </form>
+        </div>
+
+        <div class="mobile-links">
+            <ul>
+                <li><i class="fa fa-phone"></i>&ensp;&ensp;&ensp;(778) 123 4550</li>
+                <li><i class="fa fa-envelope"></i> &ensp;&ensp;BellaItalia@info.com</li>
+                <li><i class="fa fa-instagram"></i> <a href="https://www.instagram.com">&ensp;&ensp;Bella_Italia_Resturants</a></li>
+                <li><i class="fa fa-facebook-f"></i><a href="https://www.facebook.com">&ensp;&ensp;&ensp;Bella_Italia_Resturants</a></li>
+            </ul>
+        </div>
+           
+
+
+        <!-- footer -->
+        <footer><p class="copyright">&copy;&ensp;Copyright 2024, ImpactDEV</p></footer>
+    </div>
+
+
+</body>
+</html>

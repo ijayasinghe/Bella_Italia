@@ -1,0 +1,510 @@
+
+/*Anoushkas Stylesheet*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: system-ui;
+
+}
+
+
+
+
+@media screen and (min-width: 460px){
+    .parent {
+        display: grid;
+        grid-template-columns: 6, 1fr;
+        grid-template-rows: 9, 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+
+
+.header {
+    grid-area: 1 / 1 / 2 / 7;
+    background-color: maroon;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 10%;
+}
+
+
+.header2 {
+    grid-area: 2 / 1 / 3 / 7;
+    background-color: rgb(203, 203, 203);
+    background-image: url("Images/PastaChefHead2.jpg");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    max-height: fit-content;
+}
+
+
+.locations {
+    grid-area: 8 / 1 / 9 / 7;
+    background-color: black;
+    color: whitesmoke;
+    padding: 6%;
+    height: fit-content;
+}
+
+
+.footer {
+    grid-area: 9 / 1 / 10 / 7;
+    background-color: white;
+    background-image: url("Images/PastaChefHead2.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    line-height: 100px;
+    padding-left: 13%;
+    text-align: right;
+    padding-right: 6%;
+}
+
+
+.mainPicture {
+    grid-area: 3 / 1 / 8 / 4;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/58e2595c3e00be0ae51453aa/7436f8e5-64f1-44d7-913e-9f78711422b7/Creamy+Lemon+Pasta");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.form {
+    grid-area: 3 / 4 / 8 / 7;
+    background-color: white;
+    border-top: 1px maroon;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    
+}
+
+label[for] {
+    color:maroon;
+}
+
+label[for=html] {
+    color: black;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+.fa-instagram {
+    background: white;
+    color: maroon;
+}
+
+.fa-twitter {
+    background: white;
+    color:maroon;
+}
+
+.fa-google {
+    background: white;
+    color: maroon;
+}
+
+.fa-facebook {
+    background: white;
+    color: maroon;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(51 51 51/80%);
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    color: maroon;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 999px) {
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: (6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+        
+.header { 
+    grid-column: 1/2;
+    background-color: maroon;
+    color: whitesmoke;
+    text-align: center;
+}
+.header2 {
+    grid-column: 1/2;
+    background-color: rgb(203, 203, 203);
+    background-image: url("Images/PastaChefHead2.jpg");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    max-height: fit-content;
+}
+.mainPicture {
+    grid-column: 1/2;
+}
+.form {
+    grid-column: 1/2;
+    background-color: white;
+    border-top: 1px maroon;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    
+}
+
+label[for] {
+    color: maroon;
+}
+
+label[for=html] {
+    color: black;
+}
+ 
+.locations {
+    grid-column: 1/2;
+    background-color: black;
+    color: whitesmoke;
+    padding: 6%;
+    height: fit-content;
+}
+.footer {
+    grid-column: 1/2;
+    background-color: white;
+    background-image: url("Images/PastaChefHead2.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    line-height: 100px;
+    padding-left: 13%;
+    text-align: right;
+    padding-right: 6%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+.fa-instagram {
+    background: white;
+    color:maroon;
+}
+
+.fa-twitter {
+    background: white;
+    color: maroon;
+}
+
+.fa-google {
+    background: white;
+    color:maroon;
+}
+
+.fa-facebook {
+    background: white;
+    color: maroon;
+}
+
+nav {
+    overflow: hidden;
+}
+  
+nav a {
+    float: left;
+    font-size: 10px;
+    color: black;
+    text-align: center;
+    padding: 10px 35px;
+    text-decoration: none;
+    margin-top: 4px;
+}
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+    font-size: 10px;  
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    font-family: inherit;
+    margin-top: 8px;
+}
+  
+nav a:hover, .dropdown:hover .dropbtn {
+    background-color: maroon;
+    border-radius: 20px;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 175px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px; 
+
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: maroon;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+.parent {
+        display: grid;
+        grid-template-columns: 6, 1fr;
+        grid-template-rows: 9, 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+
+
+.header {
+    grid-area: 1 / 1 / 2 / 7;
+    background-color: maroon;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 35%;
+}
+
+
+.header2 {
+    grid-area: 2 / 1 / 3 / 7;
+    background-color: rgb(203, 203, 203);
+    background-image: url("Images/PastaChefHead2.jpg");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    max-height: fit-content;
+}
+
+
+.locations {
+    grid-area: 8 / 1 / 9 / 7;
+    background-color: black;
+    color: whitesmoke;
+    height: fit-content;
+    text-align: center;
+}
+
+
+.footer {
+    grid-area: 9 / 1 / 10 / 7;
+    background-color: white;
+    background-image: url("Images/PastaChefHead2.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    line-height: 100px;
+    padding-left: 13%;
+    text-align: right;
+    padding-right: 6%;
+}
+
+
+.mainPicture {
+    grid-area: 3 / 1 / 8 / 4;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/58e2595c3e00be0ae51453aa/7436f8e5-64f1-44d7-913e-9f78711422b7/Creamy+Lemon+Pasta");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.form {
+    grid-area: 3 / 4 / 8 / 7;
+    background-color: white;
+    border-top: 1px maroon;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    
+}
+
+label[for] {
+    color: maroon;
+}
+
+label[for=html] {
+    color: black;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+.fa-instagram {
+    background: white;
+    color: maroon;
+}
+
+.fa-twitter {
+    background: white;
+    color:maroon;
+}
+
+.fa-google {
+    background: white;
+    color: maroon;
+}
+
+.fa-facebook {
+    background: white;
+    color: maroon;
+}
+
+nav {
+    overflow: hidden;
+}
+  
+nav a {
+    float: left;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding: 25px 40px;
+    text-decoration: none;
+    margin-top: 4px;
+}
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    font-family: inherit;
+    margin-top: 8px;
+}
+  
+nav a:hover, .dropdown:hover .dropbtn {
+    background-color: maroon;
+    border-radius: 20px;
+    color: whitesmoke;
+
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 175px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px; 
+
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color:rgb(74, 72, 72);
+    color: whitesmoke;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+}
